@@ -1,4 +1,4 @@
-package io.github.alprkeskin.producermicroservice.config;
+package io.github.alprkeskin.consumermicroservice.config;
 
 import org.springframework.amqp.core.*;
 import org.springframework.beans.factory.annotation.Value;
@@ -15,6 +15,7 @@ public class RabbitConfig {
     private static final String ROUTING_POSTFIX = "-routing";
     @Value("#{'producer-to-consumer'}")
     private String searchPrefix;
+
 
     @Bean
     public Declarables createRabbitQueuesConnection() {
