@@ -10,5 +10,8 @@
         <module name="ProducerMicroservice.main" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="common-model" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>
